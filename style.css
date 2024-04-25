@@ -28,7 +28,7 @@ body {
 .top-section {
   height: 90dvh;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 1rem;
 }
 
