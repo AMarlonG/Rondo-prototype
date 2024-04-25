@@ -2,7 +2,7 @@
 :root {
   --rondo-primary: #840000;
   --rondo-secondary: #dff5fc;
-  --rondo-accent: #fdfcde;
+  --rondo-accent: #faf6ae;
 
   background-color: var(--rondo-accent);
   color: var(--rondo-primary);
@@ -10,13 +10,6 @@
   font-family: sans-serif;
 
   /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
-  --step-0: clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem);
-  --step-1: clamp(1.35rem, 1.2761rem + 0.3696vi, 1.5625rem);
-  --step-2: clamp(1.62rem, 1.5041rem + 0.5793vi, 1.9531rem);
-  --step-3: clamp(1.944rem, 1.771rem + 0.8651vi, 2.4414rem);
-  --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vi, 3.0518rem);
-  --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vi, 3.8147rem);
 
   a {
     color: var(--rondo-primary);
@@ -28,12 +21,6 @@ body {
   margin-inline: auto;
 }
 
-h1 {
-  display: grid;
-  justify-items: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-}
-
 .letters {
   fill: var(--rondo-primary);
 }
@@ -41,9 +28,13 @@ h1 {
 .top-section {
   height: 90dvh;
   display: grid;
-  grid-template-columns: minmax(200px, 65dvw) minmax(100px, 35dvw);
+  grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
   gap: 1rem;
-  font-size: var(--step-1);
+}
+
+header {
+  display: grid;
+  place-content: center;
 }
 
 nav {
@@ -51,70 +42,7 @@ nav {
   place-content: center;
 }
 
-.nav-options * + * {
-  margin-block: 1rem;
-}
-
-.title {
-  font-size: var(--step-4);
-  padding-block-end: 2.5rem;
-}
-
-section,
-footer {
-  padding-block-end: 7rem;
-}
-
-ul {
-  list-style-type: none;
-
-  display: grid;
-  gap: 3rem;
-  grid-auto-flow: column;
-  grid-auto-columns: 21%;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-
-  li {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-rows: min-content;
-    justify-items: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    min-width: 5rem;
-    aspect-ratio: 4 / 5;
-  }
-
-  li > img {
-    inline-size: 100%;
-    aspect-ratio: 1;
-    border-radius: 100%;
-    object-fit: cover;
-  }
-
-  h4 {
-    font-size: var(--step-2);
-  }
-
-  p,
-  a {
-    font-size: var(--step-0);
-  }
-}
-
-.smak-grid {
-  li {
-    border: solid 0.25rem var(--rondo-primary);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    display: grid;
-    aspect-ratio: 1;
-  }
-}
-
 footer {
   display: grid;
   place-content: center;
 }
-
-
