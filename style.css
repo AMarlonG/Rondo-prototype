@@ -1,8 +1,26 @@
+body {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+header {
+  --_main-min-width: 750px;
+  --_sidebar-size: 250px;
+  --_gap: 2rem;
+
+  display: flex;
+  gap: var(--_gap);
+  flex-wrap: wrap;
+}
+
 h1 {
   block-size: 90dvh;
   display: grid;
   grid-template-rows: 5rem minmax(50px, 200px) 4rem minmax(100px, 350px) 1fr;
-  grid-template-columns: minmax(0.35rem, 100%) minmax(18rem, 100%) minmax(0.35rem, 100%);
+  grid-template-columns: minmax(0.35rem, 100%) minmax(18rem, 100%) minmax(
+      0.35rem,
+      100%
+    );
   place-items: center;
 }
 
@@ -13,6 +31,16 @@ svg {
   grid-column: 2;
   display: grid;
   place-self: end center;
+
+  fill: var(--accent-color);
+
+  flex-grow: 999;
+  flex-basis: calc(
+    (
+      (var(--_main-min-width) - (100% - var(--_sidebar-size) - var(--_gap))) *
+        9999
+    )
+  );
 }
 
 img {
@@ -20,5 +48,13 @@ img {
   grid-row: 3 / span 2;
   grid-column: 2;
   display: grid;
-  place-self:  start end;
+  place-self: start end;
+
+  flex-basis: var(--_sidebar-size);
+  flex-grow: 1;
+}
+
+nav {
+  display: grid;
+  place-content: center;
 }

@@ -1,13 +1,10 @@
 :root {
   --primary-color: #840000;
   --secondary-color: #dff5fc;
-  --accent-color: #faf6ae;
+  --tertiary-color: #faf6ae;
+  --accent-color: #f4dcff;
 
-  font-family: sans-serif;
-}
-
-svg {
-  fill: var(--primary-color);
+  font-family: system-ui;
 }
 
 body {
@@ -15,5 +12,4 @@ body {
   margin-inline: auto;
 
   line-height: 1.7;
-
 }
