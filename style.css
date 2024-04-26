@@ -1,48 +1,21 @@
-/* Rondo colors */
-:root {
-  --rondo-primary: #840000;
-  --rondo-secondary: #dff5fc;
-  --rondo-accent: #faf6ae;
-
-  background-color: var(--rondo-accent);
-  color: var(--rondo-primary);
-
-  font-family: sans-serif;
-
-  /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
-  a {
-    color: var(--rondo-primary);
-  }
-}
-
-body {
-  width: min(90dvw, 100% - 4rem);
-  margin-inline: auto;
-}
-
-.letters {
-  fill: var(--rondo-primary);
-}
-
-.top-section {
-  height: 90dvh;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-}
-
 header {
+  block-size: 90dvh;
   display: grid;
-  place-content: center;
+  grid-template-rows: 5rem minmax(100px, 400px) minmax(100px, 400px) 1fr;
+place-items: center;
+
 }
 
-nav {
-  display: grid;
-  place-content: center;
+svg {
+    z-index: 10;
+      max-block-size: 100%;
+
+    grid-row: 2;
 }
 
-footer {
+img {
+  max-block-size: 100%;
+  grid-row: 3;
   display: grid;
-  place-content: center;
+  place-self: end;
 }

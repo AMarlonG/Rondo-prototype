@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #840000;
+  --secondary-color: #dff5fc;
+  --accent-color: #faf6ae;
+
+  font-family: sans-serif;
+}
+
+svg {
+  fill: var(--primary-color);
+}
+
+body {
+  width: min(140ch, 100% - 4rem);
+  margin-inline: auto;
+
+  line-height: 1.7;
+
+}
