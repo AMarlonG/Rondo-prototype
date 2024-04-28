@@ -13,3 +13,34 @@ body {
 
   line-height: 1.7;
 }
+
+main {
+  margin-block-end: 10rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+}
+
+footer {
+  display: grid;
+  gap: 1rem;
+  place-content: center;
+  text-align: center;
+  margin-block: 3rem;
+  color: inherit;
+
+  .funding {
+    display: flex;
+    gap: 1rem;
+  }
+}

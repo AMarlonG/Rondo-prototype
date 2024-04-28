@@ -1,0 +1,54 @@
+body {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+
+  min-width: 100%;
+}
+
+nav {
+  padding-block: 2rem;
+  padding-inline-start: 3rem;
+  position: sticky;
+
+  svg {
+    max-inline-size: 12ch;
+    fill: var(--primary-color);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-block: 5rem;
+  font-size: 3.5rem;
+}
+
+section {
+  width: min(65ch, 100% - 4rem);
+  height: 50dvh;
+  margin-inline: auto;
+  display: grid;
+  padding-block: 2rem;
+  margin-block-end: 3.5rem;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .item {
+    display: flex;
+    gap: 1rem;
+
+    p {
+        width: fit-content;
+    }
+    span {
+      width: max-content;
+      text-align: center;
+    }
+  }
+}
