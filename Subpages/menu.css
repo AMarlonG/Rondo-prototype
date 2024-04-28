@@ -5,14 +5,19 @@ body {
   min-width: 100%;
 }
 
-nav {
+header {
   padding-block: 2rem;
   padding-inline-start: 3rem;
   position: sticky;
+  max-inline-size: 20ch;
+  height: 100%;
+  top: 0;
 
   svg {
-    max-inline-size: 12ch;
     fill: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 0.5em;
+
   }
 }
 
@@ -22,33 +27,28 @@ h1 {
   font-size: 3.5rem;
 }
 
-section {
-  width: min(65ch, 100% - 4rem);
-  height: 50dvh;
-  margin-inline: auto;
-  display: grid;
-  padding-block: 2rem;
-  margin-block-end: 3.5rem;
-
-  h2 {
+h2 {
     font-size: 1.5rem;
   }
 
-  ul {
+section {
+  width: min(65ch, 100% - 4rem);
+  margin-inline: auto;
+  margin-block-end: 3.5rem;
+
+  
+
+  article {
     display: grid;
-    gap: 1.5rem;
-  }
-
-  .item {
-    display: flex;
     gap: 1rem;
+    padding-block: 1rem;
+    margin-block-end: 1rem;
 
-    p {
-        width: fit-content;
-    }
-    span {
-      width: max-content;
-      text-align: center;
+    div {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+
     }
   }
 }
