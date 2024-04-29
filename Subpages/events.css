@@ -20,6 +20,10 @@ header {
   }
 }
 
+main {
+  margin-block-end: 8rem;
+}
+
 h1 {
   text-align: center;
   margin-block: 5rem;
@@ -33,10 +37,17 @@ h2 {
 section {
   width: min(70ch, 100% - 4rem);
   margin-inline: auto;
+  margin-block-end: 4rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
+
+
+picture {
+    display: flex;
+    place-items: center center;
+}
 
   img {
     width: 100%;
@@ -48,11 +59,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    justify-content: space-between;
 
-    span {
-      display: flex;
-      gap: 1rem;
-    }
+    /* span {
+        display: flex;
+        flex-direction: column;
+        place-items: end;
+    } */
   }
 }
