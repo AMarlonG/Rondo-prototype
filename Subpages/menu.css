@@ -8,7 +8,7 @@ body {
 header {
   padding-block: 2rem;
   padding-inline-start: 3rem;
-  position: sticky;
+  /* position: sticky; */
   max-inline-size: 20ch;
   height: 100%;
   top: 0;
