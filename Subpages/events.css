@@ -6,16 +6,17 @@ body {
 }
 
 header {
-  padding-block: 2rem;
-  padding-inline-start: 3rem;
+  width: min(110ch, 100% - 4rem);
+  margin-inline: auto;
+  padding-block-start: 2rem;
   /* position: sticky; */
-  max-inline-size: 20ch;
   height: 100%;
   top: 0;
 
   svg {
     fill: var(--primary-color);
     background-color: var(--secondary-color);
+    max-inline-size: 15ch;
     padding: 0.5em;
   }
 }
@@ -43,11 +44,10 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
 
-
-picture {
+  picture {
     display: flex;
     place-items: center center;
-}
+  }
 
   img {
     width: 100%;
@@ -60,10 +60,11 @@ picture {
     flex-direction: column;
     gap: 0.5rem;
 
-    /* span {
+    span {
         display: flex;
-        flex-direction: column;
-        place-items: end;
-    } */
+        gap: 1rem;
+
+        place-items: space-between;
+    }
   }
 }

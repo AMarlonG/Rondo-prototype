@@ -1,14 +1,18 @@
 :root {
   --primary-color: #840000;
-  --secondary-color: #dff5fc;
+  --secondary-color: #d5edf1;
   --tertiary-color: #faf6ae;
   --accent-color: #f4dcff;
+}
 
-  font-family: system-ui;
+@font-face {
+  font-family: 'apercu';
+  src: url(Assets/apercu-mono-regular.woff2) format('woff2');
 }
 
 body {
-  width: min(140ch, 100% - 4rem);
+  font-family: 'apercu';
+  width: min(120ch, 100% - 4rem);
   margin-inline: auto;
 
   line-height: 1.7;
@@ -46,7 +50,7 @@ nav {
 
   .internal-links {
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
   }
 }
 
@@ -55,8 +59,9 @@ footer {
   gap: 1rem;
   place-content: center;
   text-align: center;
-  margin-block: 3rem;
+  margin-block-start: 3rem;
   color: inherit;
+  padding-block: 5rem;
 
   .funding {
     display: flex;

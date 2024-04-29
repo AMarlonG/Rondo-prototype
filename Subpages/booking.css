@@ -6,16 +6,17 @@ body {
 }
 
 header {
-  padding-block: 2rem;
-  padding-inline-start: 3rem;
+  width: min(110ch, 100% - 4rem);
+  margin-inline: auto;
+  padding-block-start: 2rem;
   /* position: sticky; */
-  max-inline-size: 20ch;
   height: 100%;
   top: 0;
 
   svg {
     fill: var(--primary-color);
     background-color: var(--accent-color);
+    max-inline-size: 15ch;
     padding: 0.5em;
   }
 }
@@ -48,6 +49,20 @@ h2 {
   font-size: 1.5rem;
 }
 
-.form {
-    
+li {
+  display: grid;
 }
+
+textarea {
+  width: 15rem;
+  display: grid;
+  place-self: center;
+  background-color: inherit;
+  border: 1px solid var(--primary-color);
+}
+
+.info {
+  display: grid;
+  gap: 1rem;
+}
+
