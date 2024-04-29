@@ -12,6 +12,8 @@ body {
   margin-inline: auto;
 
   line-height: 1.7;
+
+  text-wrap: balance;
 }
 
 main {
@@ -30,6 +32,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 a {
