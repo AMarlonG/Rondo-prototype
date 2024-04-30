@@ -9,7 +9,6 @@ header {
   width: min(110ch, 100% - 4rem);
   margin-inline: auto;
   padding-block-start: 2rem;
-  /* position: sticky; */
   height: 100%;
   top: 0;
 
@@ -24,11 +23,10 @@ header {
 h1 {
   text-align: center;
   margin-block: 5rem;
-  font-size: 3.5rem;
 }
 
-h2 {
-  font-size: 1.5rem;
+h3 {
+  margin-block: 1rem;
 }
 
 section {

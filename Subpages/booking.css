@@ -9,7 +9,6 @@ header {
   width: min(110ch, 100% - 4rem);
   margin-inline: auto;
   padding-block-start: 2rem;
-  /* position: sticky; */
   height: 100%;
   top: 0;
 
@@ -22,47 +21,35 @@ header {
 }
 
 main {
-  width: min(70ch, 100% - 4rem);
+  width: min(90ch, 100% - 4rem);
   margin-inline: auto;
   margin-block-end: 8rem;
   text-align: center;
+
+  h1 {
+    text-align: center;
+    margin-block: 5rem;
+  }
 
   h2 {
     margin-block-end: 1rem;
   }
 
+  .info {
+    display: grid;
+    gap: 1rem;
+  }
+
+  picture {
+    margin-block-start: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
   img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    margin-block: 2rem;
   }
 }
-
-h1 {
-  text-align: center;
-  margin-block: 5rem;
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-li {
-  display: grid;
-}
-
-textarea {
-  width: 15rem;
-  display: grid;
-  place-self: center;
-  background-color: inherit;
-  border: 1px solid var(--primary-color);
-}
-
-.info {
-  display: grid;
-  gap: 1rem;
-}
-

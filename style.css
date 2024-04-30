@@ -1,41 +1,12 @@
 body {
   background-color: var(--primary-color);
   color: var(--accent-color);
-
-  
-}
-
-h2 {
-  font-size: 1.5rem;
 }
 
 header {
-  --main-min-width: 45ch;
-  --sidebar-size: 45ch;
-  --gap: 7rem;
-
-  display: flex;
-  gap: var(--gap);
-  flex-wrap: wrap;
-  margin-block-start: 5rem;
-
-  * {
-    flex-grow: 1;
-  }
-
-  :first-child {
-    flex-grow: 999;
-    flex-basis: calc(
-      (
-        (var(--main-min-width) - (100% - var(--sidebar-size) - var(--gap))) *
-          9999
-      )
-    );
-  }
-
-  :last-child {
-    flex-basis: var(--sidebar-size);
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-block-start: 3rem;
 }
 
 h1 {
