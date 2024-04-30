@@ -72,21 +72,24 @@ nav {
 }
 
 footer {
+  * {
+    font-size: var(--step-0);
+  }
+
+  color: inherit;
+
   display: grid;
   gap: 1rem;
-  place-content: center;
+
   text-align: center;
+
   margin-block-start: 3rem;
-  color: inherit;
   padding-block: 5rem;
 
   .socials,
   .funding {
     display: flex;
+    place-content: center;
     gap: 1rem;
-  }
-
-  * {
-    font-size: var(--step-0);
   }
 }

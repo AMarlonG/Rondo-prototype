@@ -1,7 +1,6 @@
 body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-
   min-width: 100%;
 }
 
@@ -21,22 +20,21 @@ header {
 }
 
 main {
-  margin-block-end: 8rem;
-}
-
-h1 {
-  text-align: center;
-  margin-block: 5rem;
-}
-
-section {
   width: min(70ch, 100% - 4rem);
   margin-inline: auto;
+
+  h1 {
+    text-align: center;
+    margin-block: 5rem;
+  }
+}
+
+li {
   margin-block-end: 4rem;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 
   picture {
     display: flex;
@@ -55,10 +53,10 @@ section {
     gap: 0.5rem;
 
     span {
-        display: flex;
-        gap: 1rem;
+      display: flex;
+      gap: 1rem;
 
-        place-items: space-between;
+      place-items: space-between;
     }
   }
 }
