@@ -47,6 +47,7 @@ section {
   gap: 1rem;
   place-content: center;
   margin-block-start: 5rem;
+  text-align: center;
 
   p {
     /* font-size: var(--step-2); */
