@@ -27,6 +27,9 @@ header {
     grid-row: 2;
     grid-column: 2;
 
+    place-self: center center;
+    width: 100%;
+
     svg {
       fill: var(--accent-color);
     }
